@@ -4,20 +4,35 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: #424040;
 }       
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 h2 {
     font-size: 48px;
     font-weight: black;
     color: #424040;
     text-transform: uppercase;
-    display: inline-block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .container {
     width: 1110px;
     margin: auto;
+
 }
+
+/* =========  HEADER  =========== */
 
 header {
     margin-top: 40px;
@@ -39,4 +54,143 @@ nav ul {
     color: black;
     text-decoration: none;
     font-weight: 900;
+}
+
+.nav_link a:hover {
+    color: #1abc9c;
+}
+
+/* ========== FEATURE ========= */
+
+main {
+    margin-top: 90px;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section_title::after {
+    content: '';
+    display: block;
+    width: 165px;
+    height: 5px;
+    background-color: #1abc9c;
+    margin: 30px auto; 
+}
+
+.featured_list {
+    font-size: 0;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.featured_card {
+    width: 255px;
+    /* height: 320px; */
+    display: block;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.featured_card:nth-child(4n) {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.feature_img {
+    height: auto;
+    width: 255px;
+    margin-bottom: 0;
+    display: block;
+    padding-bottom: 0;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    background-color: #323232;
+    height: 40px;
+    margin-top: 0;
+    padding-top: 0;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.description:hover {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
+
+.name {
+
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.price {
+
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+}
+
+/* ========== NEWS ========= */
+
+
+.news {
+    margin-bottom: 50px;
+    margin-top: 100px;  
+}
+
+.news_articles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 110px;
+}
+
+article {
+    width: 350px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.news_title {
+    
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.news_title::after {
+    content: "";
+    width: 150px;
+    height: 3px;
+    display: block;
+    background-color: #1abc9c;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.news_text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.news_btn {
+    background-color: #1abc9c;
+    padding: 15px 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border: none;
 }
