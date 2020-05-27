@@ -120,7 +120,7 @@ main {
     transition: 0.2s;
 }
 
-.description:hover {
+.featured_card:hover .description {
     background-color: #1abc9c;
     cursor: pointer;
 }
